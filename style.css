@@ -166,3 +166,26 @@ button {
     inline-size: 100%;
   }
 }
+
+.flow > * + * {
+  margin-block-start: var(--flow-space, var(--space-300));
+}
+
+.cluster {
+  display: flex;
+  flex-direction: var(--cluster-direction, row);
+  flex-wrap: wrap;
+  gap: var(--cluster-space, var(--space-300));
+  justify-content: var(--cluster-justify, start);
+  align-items: var(--cluster-align, center);
+}
+
+.challenge-wrapper {
+  --_max-width: var(--max-width, 320px);
+
+  display: grid;
+  place-items: center;
+  min-height: 100vh;
+  padding: var(--space-300)
+    max(var(--space-300), calc(50% - var(--_max-width) / 2));
+}
