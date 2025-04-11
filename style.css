@@ -70,7 +70,7 @@
   --color-background-primary: var(--white);
   --color-background-secondary: var(--cyan);
   --color-background-tertiary: color-mix(
-    in hsl,
+    in oklch,
     var(--color-background-secondary),
     white 15.19%
   );
